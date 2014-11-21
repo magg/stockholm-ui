@@ -7,10 +7,10 @@
 
 .editor-colors {
   background-color: @white;
-  color: @gray_dark; }
+  color: @black; }
 
 .editor {
-  font-family: 'Espresso Mono', Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+  font-family: Menlo;
 
   .invisible-character,
   .indent-guide { color: @gray_light2; }
@@ -30,8 +30,14 @@
     // border: 1px solid @light_blue_border;
     border-radius: 2px; }
 
-  .line-number.cursor-line-no-selection { background-color: @gutter_highlight; }
+  .line-number.cursor-line-no-selection { background-color: @line_highlight; }
 
+}
+
+.editor.is-focused {
+  .line.cursor-line {
+    background-color: @line_highlight;
+  }
 }
 
 .bracket-matcher {
@@ -46,9 +52,9 @@
 
 .entity { color: @blue_tag; }
 
-.keyword { color: @green; }
+.keyword { color: @keywords; }
 
-.storage.type { color: @green; }
+.storage.type { color: @keywords; }
 
 .constant { color: @red;
 
@@ -57,7 +63,7 @@
 
 }
 
-.variable { color: @blue; }
+.variable { color: @variables; }
 
 .delimiter, .brace { color: @black; }
 
@@ -69,7 +75,7 @@
 
 .invalid.illegal { color: @red; }
 
-.string { color: @orange;
+.string { color: @strings;
 
   .constant.character.escape { color: @red; }
 
@@ -106,9 +112,9 @@
 .html,
 .xml{
 
-  .tag { color: @blue; }
+  .tag { color: @commands_blue; }
 
-  .entity { color: @blue_tag;
+  .entity { color: @commands_blue;
 
     &.name {
       background-color: @light_blue;
@@ -118,7 +124,7 @@
 
   .comment { color: @comment; }
 
-  .attribute-name { color: @blue; }
+  .attribute-name { color: @attributes; }
 
   .quoted { color: @red;
 
@@ -203,7 +209,7 @@
 
   .entity.name { color: @purple; }
 
-  .string { color: @red; }
+  .string { color: @strings; }
 
 }
 

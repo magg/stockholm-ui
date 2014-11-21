@@ -1,14 +1,14 @@
 {
-  "name": "fizzy",
+  "name": "stockholm",
   "theme": "syntax",
-  "version": "0.15.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "A light-hearted, bright and bubbly syntax theme featuring bright colors, and inspired by the Espresso default highlighting, and the Soda Sublime Text 2 theme.",
-  "repository": "https://github.com/jglovier/fizzy",
+  "description": "A syntax theme inspired by Smultron's Stockholm theme.",
+  "repository": "https://github.com/magg/stockholm-ui",
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/atom/fizzy/raw/master/LICENSE.md"
+      "url": "http://github.com/magg/stockholm-ui/raw/master/LICENSE.md"
     }
   ],
   "engines": {
